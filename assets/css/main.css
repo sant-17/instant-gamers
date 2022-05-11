@@ -19,7 +19,7 @@ Version: 1.0
     --lightpurple: #9a93c1;
     --darkpurple: #463c82;
     --darkerpurple: #1d1936;
-    --grey: #2b2936;
+    --grey: #262626;
     --white: #ffffff;
     --yellow: #ffe161;
 }
@@ -1140,8 +1140,8 @@ a.video-play-btn {
 }
 
 a.video-play-btn:hover {
-    background-color: #333;
-    color: #F28123;
+    background-color: var(--grey);
+    color: var(--purple);
 }
 
 .latest-news-bg {
@@ -1487,7 +1487,7 @@ body {
 }
 
 .hero-text p.subtitle {
-    color: var(--lightpurple);
+    color: var(--purple);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 7px;
@@ -2890,4 +2890,21 @@ nav.main-menu ul li ul li {
 
 .hidden-sign {
     color: var(--darkerpurple)
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle {
+    color: #ffffff;
+    background-color: var(--darkpurple);
+    border-color: var(--darkpurple);
+}
+
+a.text-info:focus, a.text-info:hover {
+    color: var(--darkpurple)!important;
+}
+
+.btn-info.focus, .btn-info:focus {
+    color: #ffffff;
+    background-color: var(--darkpurple);
+    border-color: var(--purple);
+    box-shadow: rgba(85, 58, 195, 0.5) 0px 0px 0px 0.2rem;
 }
